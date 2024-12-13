@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href = "mains.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIREA's Teachers Rating</title>
+</head>
+<body>
+
+<header>
+    <h1>MIREA's Teachers Rating</h1>
+</header>
+
+<main>
+    <h2>Teacher Ratings</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Teacher Name</th>
+                <th>Subject</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>Mathematics</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Physics</td>
+                <td>4.7</td>
+            </tr>
+            <tr>
+                <td>Emily Johnson</td>
+                <td>Chemistry</td>
+                <td>4.6</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>Computer Science</td>
+                <td>4.8</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 id = "counter">0</h2>
+    <button id = "incrementButton">Kozlov huesos</button>
+    <script>
+        let count = 0;
+        const counterDisplay = document.getElementById("counter")
+        const incrementButton = document.getElementById("incrementButton")
+
+        incrementButton.addEventListener('click', () => {
+            count++;
+            counterDisplay.textContent = count;
+        });
+    </script>
+    <h1>Сколько хуев сосал козлов:</h1>
+    <h1 id="pon">0</h1>
+    <script>
+        let count2 = 0;
+        const countDisplay = document.getElementById("pon")
+        while (count2 < 1000) {
+            count2++;
+            countDisplay.textContent = count2;
+            await delay(1);
+        }
+    </script>
+</main>
+
+</body>
+</html>
+
