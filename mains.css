@@ -40,4 +40,13 @@ th {
 tr:hover {
     background-color: #1b74c1;
 }
-
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: purple;
+    background-color: aquamarine;
+    border-radius: 14px;
+}
